@@ -2,6 +2,7 @@ import numpy as np
 
 # Exercicio 1
 
+
 # 1
 print(np.linspace(0, 1, num=21))
 

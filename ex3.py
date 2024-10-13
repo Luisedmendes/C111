@@ -1,8 +1,5 @@
 import numpy as np
-
 arr = np.loadtxt('data/space.csv', delimiter=';', dtype=str, encoding='utf-8')
-
-
 # 1
 status_missoes = arr[:, -1]
 
@@ -28,7 +25,7 @@ in_usa = np.array([1 if "USA" in location else 0 for location in locations])
 
 usa_missions = 0
 for x in in_usa:
-  if x == 1: usa_missions+= 1
+  if x == 1: usa_missions += 1
 
 print(usa_missions)  
 
@@ -65,3 +62,7 @@ for company in company_names:
 print("Empresas e quantidades de missões realizadas:")
 for company, count in company_missions_count.items():
     print(f"Empresa: {company}, Quantidade de missões: {count}")
+
+
+
+
