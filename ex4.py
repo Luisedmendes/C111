@@ -4,7 +4,7 @@ dados = pd.read_csv('data/paises.csv', sep=';', encoding='utf-8')
 
 # a) Selecionar e exibir os países que estão na região da Oceania
 paises_oceania = dados[dados['Region'].str.contains('OCEANIA', case=False)]
-print("Países da região da OCEANIA:")
+print("Países da região da OCEANIA:") 
 print(paises_oceania['Country'].values)
 
 # b) Contar o número de países na Oceania
